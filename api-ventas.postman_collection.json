@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "e1ab9427-e3f8-48ef-b760-549457a46bf5",
+		"name": "api-ventas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24912193"
+	},
+	"item": [
+		{
+			"name": "Nuevo articulo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"codigo\": \"GHG454545\",\r\n        \"nombre\": \"Amti-virus\",\r\n        \"descripcion\": \"Licencia de McAfee Full Protection\",\r\n        \"imagen\": \"imagen_producto\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/articulos/new"
+			},
+			"response": []
+		},
+		{
+			"name": "Update articulo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"codigo\": \"HJKHJK45656\",\r\n        \"nombre\": \"MIcrosoft OFFice\",\r\n        \"descripcion\": \"Licencia de un año Office premiun\",\r\n        \"imagen\": \"imagen_producto\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/articulos/edit/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar articulos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/articulos"
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar articulo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/articulos/delete/5"
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/clients"
+			},
+			"response": []
+		},
+		{
+			"name": "Nuevo cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"nombre\": \"Pedro\",\r\n        \"apellido\": \"Juarez\",\r\n        \"sexo\": \"M\",\r\n        \"fecha_nacimiento\": \"2017-12-29\",\r\n        \"tipo_documento\": \"DPI\",\r\n        \"num_documento\": \"15456456456\",\r\n        \"direccion\": \"3810 Emard Squares\\nSteuberville, VT 52994\",\r\n        \"telefono\": \"+1-205-310-8832\",\r\n        \"email\": \"ratke.margarette@yahoo.com\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/clients/new"
+			},
+			"response": []
+		},
+		{
+			"name": "Update cliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"nombre\": \"Jessie\",\r\n        \"apellido\": \"Joy\",\r\n        \"sexo\": \"F\",\r\n        \"fecha_nacimiento\": \"2017-08-19\",\r\n        \"tipo_documento\": \"DPI\",\r\n        \"num_documento\": \"4545645644\",\r\n        \"direccion\": \"3810 Emard Squares\\nSteuberville, VT 52994\",\r\n        \"telefono\": \"+1-205-310-8832\",\r\n        \"email\": \"ratke.margarette@yahoo.com\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/clients/edit/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar cliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/clients/delete/4"
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar trabajadores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/workers"
+			},
+			"response": []
+		},
+		{
+			"name": "Nuevo trabajador",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"nombre\": \"Jhonny\",\r\n        \"apellido\": \"Penas\",\r\n        \"sexo\": \"M\",\r\n        \"fecha_nacimiento\": \"1979-03-10\",\r\n        \"tipo_documento\": \"DPI\",\r\n        \"num_documento\": \"4545645644\",\r\n        \"direccion\": \"34440 Jones Stravenue\\nAlexamouth, KS 16091-8944\",\r\n        \"telefono\": \"(818) 319-8054\",\r\n        \"email\": \"troy.murazik@orn.net\",\r\n        \"acceso\": \"employee\",\r\n        \"usuario\": \"user\",\r\n        \"password\": \"/r:uB+tE9\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/workers/new"
+			},
+			"response": []
+		},
+		{
+			"name": "Update trabajador",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"nombre\": \"Nataly\",\r\n        \"apellido\": \"Morales\",\r\n        \"sexo\": \"F\",\r\n        \"fecha_nacimiento\": \"1979-03-10\",\r\n        \"tipo_documento\": \"DPI\",\r\n        \"num_documento\": \"4545645644\",\r\n        \"direccion\": \"34440 Jones Stravenue\\nAlexamouth, KS 16091-8944\",\r\n        \"telefono\": \"(818) 319-8054\",\r\n        \"email\": \"troy.murazik@orn.net\",\r\n        \"acceso\": \"employee\",\r\n        \"usuario\": \"user\",\r\n        \"password\": \"/r:uB+tE9\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/workers/edit/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar trabajador",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/workers/delete/5"
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar ventas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/ventas"
+			},
+			"response": []
+		},
+		{
+			"name": "Nueva venta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"client_id\": 2,\r\n        \"worker_id\": 2,\r\n        \"fecha\": \"1973-02-01\",\r\n        \"tipo_comprobante\": \"F\",\r\n        \"serie\": \"B\",\r\n        \"correlativo\": \"4\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/ventas/new"
+			},
+			"response": []
+		},
+		{
+			"name": "Update venta",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"client_id\": 3,\r\n        \"worker_id\": 3,\r\n        \"fecha\": \"1973-02-01\",\r\n        \"tipo_comprobante\": \"F\",\r\n        \"serie\": \"C\",\r\n        \"correlativo\": \"5\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/ventas/edit/6"
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar venta",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/ventas/delete/5"
+			},
+			"response": []
+		}
+	]
+}
